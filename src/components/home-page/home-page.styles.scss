@@ -1,0 +1,209 @@
+.main{
+    width: 100%;
+    height: 88vh;
+    background: url(../../asstes/backgroundImages/whitePlan.jpg);
+    background-size: cover;
+    opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.5s; /* slightly after navbar */
+}
+.first{
+    font-size: 6vw;
+    color: rgb(47, 149, 245);
+    font-weight: 100;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .main-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: beige;
+
+}
+.main-left h1,
+.main-left p,
+.main-left button {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+.main-container .main-left h1{
+    font-size: 3.5vw;
+    font-weight: 300;
+    margin: 0 2vw;
+    animation-delay: 0.8s;
+    letter-spacing: 0.2vw;
+}
+.main-container .main-left p{
+    font-size: 0.9vw;
+    color: #313131;
+    margin-right: 10vw;
+    margin-left: 2vw;
+     padding: 5vw 0; 
+      animation-delay: 1s;
+
+}
+.main-container .main-left button{
+     position: relative;
+  cursor: pointer;
+  padding: 1.3vw;
+  font-size: 1vw;
+  margin-right: 73%;
+  background-color: rgb(50, 122, 255);
+  border: 1px solid rgb(50, 122, 255);
+  color: #fff;
+  border-radius: 1vw;
+  z-index: 10;
+
+  /* Apply both animations */
+  animation: fadeSlideUp 0.8s ease-out forwards 1.2s, bounceUpDown 1s infinite ease-in-out 2s;
+}
+.main-container .main-left button:hover{
+    transition: 0.2s ease-in-out;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid black;
+}
+.main-container .main-right{
+     width: 50%;
+    height: 100%;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background-color:lightgoldenrodyellow ;
+}
+// .main-right .rightImg1{
+//     width: 100%;
+//     height: 50%;
+//     background-size: cover;
+//     background: url(../../asstes/home1.jpg) ;
+// }
+.main-right .rightImg2{
+    width: 100%;
+    height: 100%;
+    background: url(../../asstes/home2.png)  no-repeat center center;
+    background-size: contain;
+}
+
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 600px) {
+    .main{
+    width: 100%;
+    height: 88vh;
+    background: url(../../asstes/backgroundImages/whitePlan.jpg);
+    background-size: cover;
+    opacity: 0;
+  animation: fadeSlideUp 1s ease-out forwards;
+  animation-delay: 0.5s; /* slightly after navbar */
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container .main-left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: beige;
+
+}
+.main-left h1,
+.main-left p,
+.main-left button {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.8s ease-out forwards;
+}
+.main-container .main-left h1{
+    font-size: 8vw;
+    font-weight: 400;
+    margin: 0 5vw;
+    animation-delay: 0.8s;
+}
+.main-container .main-left p{
+    font-size: 3vw;
+    color: #313131;
+    margin-right: 10vw;
+    margin-left: 5vw;
+     padding: 10vw 0; 
+      animation-delay: 1s;
+
+}
+.main-container .main-left button{
+    cursor: pointer;
+    width: 35vw;
+    text-align: center;
+    padding: 3vw;
+    font-size: 3vw;
+    margin-right: 55%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #000000;
+     border: 1px solid black;
+      animation-delay: 1.2s;
+}
+.main-container .main-left button:hover{
+    transition: 0.2s ease-in-out;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid black;
+}
+.main-container .main-right{
+     width: 100%;
+    height: 100%;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background-color:lightgoldenrodyellow ;
+}
+// .main-right .rightImg1{
+//     width: 100%;
+//     height: 50%;
+//     background-size: cover;
+//     background: url(../../asstes/home1.jpg) ;
+// }
+.main-right .rightImg2{
+    width: 100%;
+    height: 100%;
+    background: url(../../asstes/home2.png)  no-repeat center center;
+    background-size: contain;
+}
+}
