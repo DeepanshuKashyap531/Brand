@@ -72,10 +72,10 @@ const Contact = () => {
               required
             >
               <option value="">Reason For Contact -</option>
-              <option value="support">Web Development</option>
-              <option value="inquiry">App Development</option>
-              <option value="graphic">Graphic Design</option>
-              <option value="consultant">Consultant</option>
+              <option value="Web Development">Web Development</option>
+              <option value="App Development">App Development</option>
+              <option value="Graphic Design">Graphic Design</option>
+              <option value="Consultant">Consultant</option>
             </select>
           </div>
 
