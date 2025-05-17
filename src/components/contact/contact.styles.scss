@@ -123,7 +123,7 @@
     .contact-section h2 {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 15vw;
+  font-size: 12vw;
   color: #ffffff;
   font-weight: 300;
 }
@@ -157,3 +157,39 @@
     width: 100%;
   }
 }
+
+
+@media (min-width: 601px) and (max-width:1024px){
+    .contact-section h2 {
+  text-align: center;
+  margin-bottom: 10vh;
+  font-size: 10vw;
+  color: #ffffff;
+  font-weight: 300;
+}
+.contact-section {
+  width: 100%;
+  max-width: 1300px;
+  height: 65%;
+  background: url(../../asstes/backgroundImages/black.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 1vw;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+  .form-group {
+    flex-direction: row;
+  }
+
+  .form-group input {
+    width: calc(50% - 10px);
+  }
+
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+}
+

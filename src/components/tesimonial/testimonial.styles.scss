@@ -107,7 +107,7 @@
       justify-content: center;
     }
     .Testi-header h1{
-      font-size: 10vw;
+      font-size: 7vw;
       margin-bottom: 5vw;
     } 
       .testimonial-section {
@@ -179,3 +179,103 @@
       font-size: 1.5rem;
     }
     }
+
+@media (min-width: 601px) and (max-width:1024px) {
+  .Testi{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:url(../../asstes/backgroundImages/white2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.Testi-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+
+}.Testi-header h1{
+    padding-top: 8vw;
+    font-size: 7vw;
+    letter-spacing: 3vw;
+    font-weight: 200;
+    text-decoration: overline;
+    color: #000000;
+}
+.testimonial-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      padding: 50px 20px;
+      overflow: hidden;
+    }
+
+    .testimonial-container {
+      overflow: hidden;
+      width: 100%;
+      
+    }
+
+    .testimonial-wrapper {
+      display: flex;
+      width: max-content;
+      animation: scrollLeft 40s linear infinite;
+    }
+
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .testimonial-card {
+      flex: 0 0 400px;
+      margin: 0 30px;
+      border: none;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 100px 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: scale(1.05);
+    }
+
+    .testimonial-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .testimonial-text {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .stars {
+      color: #f39c12;
+      font-size: 1.5rem;
+    }
+}
