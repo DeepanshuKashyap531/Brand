@@ -14,21 +14,20 @@ const Navigation = () => {
         {/* Logo */}
         <div className="logo"> 
           
-          <img src={ContentCove} />
+          <img src={ContentCove} alt="Logo" />
           </div>
 
         {/* Navigation Links */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Blog</a></li>
+          <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+          <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
+          <li><a href="#work" onClick={() => setMenuOpen(false)}>Work Showcaswe</a></li>
+          <li><a href="#testimonial" onClick={() => setMenuOpen(false)}>Testimonial</a></li>
+          <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
 
         {/* Right Side */}
         <div className="nav-right">
-          <button className="contact-btn">Contact</button>
-          <input type="text" placeholder="Search..." />
         </div>
 
         {/* Hamburger for mobile */}

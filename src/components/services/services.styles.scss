@@ -1,6 +1,20 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 2s ease-out;
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .services{
     width: 100%;
-    height: 360vh;
+    height: 150vh;
+    margin-bottom: 20vh;
 
 }
 .services-header{
@@ -25,25 +39,27 @@
     transition: 0.3s ease-out;
 }
 .services .services-container{
+  
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-    background:url(../../asstes/backgroundImages/whitePlan.jpg);
+    background:url(../../asstes/backgroundImages/black2.jpg) no-repeat center center;
     background-size: cover;
-    display: flex;
+
 }
 
 .services-container .services-card{
-    width: 90%;
-    height: 100vh;
-    margin: 5vh 0;
-    border: 1px solid black;
+    width: 45%;
+    height: 60vh;
+    margin: 0vh 2vw; /* Reduced vertical margin from 5vh to 2vh */
+    border-radius: 1vw;
     background-color: black;
 }
 .services-container .services-card .inside-services-card{
+      border-radius: 1vw;
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -53,33 +69,33 @@
     justify-content: center;
     align-items: center;
 }
-.services-container .services-card .inside-services-card h1{
+.services-card .inside-services-card h1{
 
-    font-size: 6vw;
+    font-size: 3vw;
     font-weight: 200;
     letter-spacing: 1vw;
 
 }
-.services-container .services-card .inside-services-card p{
-    font-size: 2vw;
+.services-card .inside-services-card p{
+    font-size: 1vw;
     margin: 5vw;
 
 }
-.services-container .services-card .inside-services-card a{
+.services-card .inside-services-card a{
     cursor: pointer;
     padding: 1vw;
-    font-size: 2vw;
+    font-size:1vw;
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);
 
 }
-.services-container .services-card .inside-services-card a:hover{
+.services-card .inside-services-card a:hover{
     transition: 0.3s;
     background-color: white;
     color: black;
     padding: 1vw 3vw;
 }
-.services-container .services-card .inside-services-card:hover{
+.services-card .inside-services-card:hover{
     opacity: 1;
     display: flex;
     background-color: rgba(0, 0, 0, 0.747);
@@ -93,20 +109,44 @@
     background:url(../../asstes/services/webDesign.jpg) no-repeat center center;
     background-size: cover;
 }
+.services-container .services-card:nth-child(1):hover{
+    background:url(../../asstes/services/web2.jpg) no-repeat center center;
+    background-size: cover;
+    transition: 0.5s ease-in;
+}
 .services-container .services-card:nth-child(2){
     background: url(../../asstes/services/graphicDesign.jpg) no-repeat center center;
         background-size: cover;
 }
+.services-container .services-card:nth-child(2):hover{
+    background: url(../../asstes/services/graphic2.jpg) no-repeat center center;
+        background-size: cover;
+        transition: 0.5s ease-in;
+}
 .services-container .services-card:nth-child(3){
     background: url(../../asstes/services/AppDesign.jpg) no-repeat center center;
         background-size: cover;
+}
+.services-container .services-card:nth-child(3):hover{
+    background: url(../../asstes/services/app2.jpg) no-repeat center center ;
+        background-size: cover;
+        transition: 0.5s ease-in;
+}
+.services-container .services-card:nth-child(4){
+    background: url(../../asstes/services/consultant3.jpg) no-repeat center center;
+        background-size: cover;
+}
+.services-container .services-card:nth-child(4):hover{
+    background: url(../../asstes/services/consultant2.jpg) no-repeat center center ;
+        background-size: cover;
+        transition: 0.5s ease-in;
 }
 
 
 @media (max-width:600px){
     .services{
     width: 100%;
-    height: 150vh;
+    height: 250vh;
 
 }
 .services-header{
@@ -132,20 +172,20 @@
 }
 .services .services-container{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background:url(../../asstes/backgroundImages/whitePlan.jpg);
+    background:url(../../asstes/backgroundImages/black.jpg);
     background-size: cover;
-    display: flex;
 }
 
 .services-container .services-card{
-    width: 80%;
-    height: 40vh;
-    margin: 5vh 0;
+    width: 90%;
+    height: 80vh;
+    margin: 5vh 5vh 5vh 5vh ;
     border: 1px solid black;
     background-color: black;
 }
@@ -153,7 +193,7 @@
     opacity: 1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.671);
+    background-color: rgba(0, 0, 0, 0.676);
     display: flex;
     flex-direction: column;
     justify-content: center;

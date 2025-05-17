@@ -2,7 +2,7 @@ import './home-page.styles.scss';
 
 const HomePage = () => {
     return (
-        <div className='main'>
+        <div id="home" className='main'>
             <div className='main-container'>
                 <div className='main-left'>
                     <h1><span className='first'>W</span>e build bold, modern digital experiences that help brands grow.</h1>

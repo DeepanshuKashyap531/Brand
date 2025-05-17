@@ -1,0 +1,159 @@
+.form-status {
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.3s ease;
+}
+
+.form-status.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-status.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  width: 100%;
+  height:110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../asstes/backgroundImages/whitePlan.jpg) no-repeat center center;
+}
+.contact-section {
+  width: 100%;
+  max-width: 1300px;
+  height: 70%;
+  background: url(../../asstes/backgroundImages/black.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 1vw;
+
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 5vw;
+  color: #ffffff;
+  letter-spacing: 3vw;
+  font-weight: 300;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: transparent;
+  color: #ffffff;
+  width: 100%;
+  padding: 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+.form-group select option{
+  color: #000000;
+}
+
+
+.form-group textarea::placeholder{
+ color: #fff;
+}
+.form-group input::placeholder{
+  color: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #8396ab;
+  outline: none;
+}
+
+.contact-form button {
+  padding: 20px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #bcbcbc;
+}
+
+@media (max-width: 600px) {
+    .contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15vw;
+  color: #ffffff;
+  font-weight: 300;
+}
+.contact-section {
+  width: 100%;
+  max-width: 1300px;
+  height: 80%;
+  background: url(../../asstes/backgroundImages/black.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 1vw;
+
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+}
+
+@media (min-width: 600px) {
+  .form-group {
+    flex-direction: row;
+  }
+
+  .form-group input {
+    width: calc(50% - 10px);
+  }
+
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+  }
+}
