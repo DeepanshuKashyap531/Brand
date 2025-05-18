@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <style>
+        /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Section 1 */
+.company-intro {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.company-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.company-intro p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.intro-image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Section 2 */
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  gap: 20px;
+}
+
+.left,
+.right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left h2 {
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Section 3: Founder Info */
+.founder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.founder-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.founder-image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.founder-text {
+  flex: 2;
+  min-width: 300px;
+}
+
+.founder-text h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.founder-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    padding: 10px 0;
+  }
+
+    .founder {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .founder-text {
+    margin-top: 20px;
+  }
+}
+
+    </style>
+
+  <!-- Section 1: About the Company -->
+  <section class="company-intro">
+    <h1>About Our Company</h1>
+    <p>We are a leading firm providing top-notch services to our clients worldwide. Our vision is to innovate and empower businesses globally.</p>
+    <img src="src/asstes/backgroundImages/office.jpg" alt="Company Overview" class="intro-image" />
+  </section>
+
+  <!-- Section 2: Split Layout -->
+  <section class="details">
+    <div class="left">
+      <h2>Our Mission</h2>
+    </div>
+    <div class="right">
+      <p>Our mission is to deliver high-quality, scalable, and innovative solutions that drive success for our partners. We believe in integrity, collaboration, and continuous improvement in everything we do.</p>
+    </div>
+  </section>
+
+
+  <section class="founder">
+  <div class="founder-image">
+    <img src="https://via.placeholder.com/300x300" alt="Founder Photo" />
+  </div>
+  <div class="founder-text">
+    <h2>Meet Our Founder</h2>
+    <p>Jane Doe, the visionary behind our company, has over 20 years of experience in the industry. Her leadership, innovation, and commitment to excellence have shaped our values and driven us to where we are today.</p>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+        .sky-nav {
+          width: 100%;
+          height: 20vh;
+          background-color: #ffffffcc;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          top: 0;
+          left: 0;
+          z-index: 1000;
+        }
+
+        .sky-flexbox {
+          max-width: 1200px;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .brand-symbol {
+          width: 12vw;
+          height: auto;
+          margin-top: -3vh;
+        }
+
+        .go-back-link {
+          text-decoration: none;
+          color: #333;
+          font-size: 1.5rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          transition: color 0.3s;
+          margin-top: -3vh;
+        }
+
+        .go-back-link i {
+          margin-right: 8px;
+        }
+
+        .go-back-link:hover {
+          color: #0077ff;
+        }
+
+
+      .container {
+        width: 100%;
+        height: 100%;
+        background: url(../../asstes/backgroundImages/white3.jpg) no-repeat center
+          center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      /* Section 1 */
+      .company-intro {
+        text-align: center;
+        padding: 50px 20px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        margin: 2vh 5vw;
+      }
+
+      .company-intro h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .company-intro p {
+        font-size: 1rem;
+        max-width: 700px;
+        margin: 0 auto 30px auto;
+      }
+
+      .intro-image {
+        width: 70vw;
+        height: 80vh;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+      }
+
+      /* Section 2 */
+      .details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: -5vh;
+        gap: 0px;
+      }
+
+      .left,
+      .right {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .left h2 {
+        font-size: 2.5rem;
+        color: #222;
+        text-align: center;
+        letter-spacing: 1vw;
+      }
+
+      /* Section 3: Founder Info */
+      .founder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 40px;
+        gap: 20px;
+      }
+
+      .founder-image {
+        flex: 1;
+        min-width: 250px;
+        text-align: center;
+      }
+
+      .founder-image img {
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .founder-text {
+        flex: 2;
+        min-width: 300px;
+      }
+
+      .founder-text h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .founder-text p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+      }
+
+      social-icons {
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #444;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #0077ff; /* Change as per your brand color */
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+
+        .sky-nav {
+          width: 100%;
+          height: 10vh;
+          background-color: #ffffffcc;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          top: 0;
+          left: 0;
+          z-index: 1000;
+        }
+
+        .sky-flexbox {
+          max-width: 1200px;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .brand-symbol {
+          width: 9rem;
+          height: auto;
+          margin-top: -3vh;
+        }
+
+        .go-back-link {
+          text-decoration: none;
+          color: #333;
+          font-size: 1.3rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          transition: color 0.3s;
+          margin-top: -3vh;
+          margin-right: 3vh;
+        }
+
+        .go-back-link i {
+          margin-right: 8px;
+        }
+
+        .go-back-link:hover {
+          color: #0077ff;
+        }
+
+        .details {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .left,
+        .right {
+          padding: 10px 0;
+        }
+        .company-intro {
+          text-align: center;
+          padding: 5px 20px;
+          border-radius: 10px;
+          margin-bottom: 40px;
+          margin: 2vh 5vw;
+        }
+        .company-intro h1 {
+          font-size: 2rem;
+          margin-bottom: 15px;
+        }
+
+        .founder {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .founder-text {
+          margin-top: 20px;
+          font-size: 1rem;
+          color: #444;
+          line-height: 1.6;
+          text-align: justify;
+        }
+
+        .founder-image img {
+          width: 100%;
+          max-width: 250px;
+          height: 250px;
+          border-radius: 50%;
+          object-fit: cover;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .intro-image {
+          width: 100%;
+          height: 25vh;
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          object-fit: contain;
+        }
+        .right p {
+          text-align: justify;
+        }
+      }

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./navigation.styles.scss";
-import { Outlet } from 'react-router-dom';
+import { Outlet ,Link} from 'react-router-dom';
 import { Fragment } from "react";
-import ContentCove from '../../asstes/logo/ContentCove.png'
+import dt3 from '../../asstes/logo/dt3.png'
 
 const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,20 +14,22 @@ const Navigation = () => {
         {/* Logo */}
         <div className="logo"> 
           
-          <img src={ContentCove} alt="Logo" />
+          <Link to={'/'}><img src={dt3} alt="Logo" /></Link>
           </div>
 
         {/* Navigation Links */}
         <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
           <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
           <li><a href="#services" onClick={() => setMenuOpen(false)}>Services</a></li>
-          <li><a href="#work" onClick={() => setMenuOpen(false)}>Work Showcaswe</a></li>
+          <li><a href="#work" onClick={() => setMenuOpen(false)}>Work </a></li>
           <li><a href="#testimonial" onClick={() => setMenuOpen(false)}>Testimonial</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          <li><a href="/about" onClick={() => setMenuOpen(false)}>About Us</a></li>
         </ul>
 
         {/* Right Side */}
         <div className="nav-right">
+  
         </div>
 
         {/* Hamburger for mobile */}
