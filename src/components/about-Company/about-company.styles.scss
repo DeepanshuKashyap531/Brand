@@ -264,3 +264,139 @@
           text-align: justify;
         }
       }
+
+      @media only screen and (max-width: 958px) and (orientation: landscape) {
+                .sky-nav {
+          width: 100%;
+          height: 20vh;
+          background-color: #ffffffcc;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+          top: 0;
+          left: 0;
+          z-index: 1000;
+        }
+
+        .sky-flexbox {
+          max-width: 1200px;
+          margin: auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .brand-symbol {
+          width: 20vw;
+          height: auto;
+          margin-top: -12vh;
+        }
+
+        .go-back-link {
+          text-decoration: none;
+          color: #333;
+          font-size: 1.5rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          transition: color 0.3s;
+          margin-top: -13vh;
+          margin-right: 3vw;
+        }
+
+        .go-back-link i {
+          margin-right: 8px;
+        }
+
+        .go-back-link:hover {
+          color: #0077ff;
+        }
+
+
+        .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: -5vh;
+        gap: 0px;
+      }
+
+      .left,
+      .right {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .left h2 {
+        font-size: 2.5rem;
+        color: #222;
+        text-align: center;
+        letter-spacing: 1vw;
+        margin-bottom: 2vw;
+      }
+      .right p{
+        font-size: 2.5vw;
+        text-align: justify;
+        color: #444;
+      }
+
+
+      .founder {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        border-radius: 10px;
+        padding: 30px;
+        margin-top: 40px;
+        gap: 20px;
+      }
+
+      .founder-image {
+        flex: 1;
+        min-width: 250px;
+        text-align: start;
+      }
+
+      .founder-image img {
+        width: 100%;
+        max-width: 600px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .founder-text {
+        flex: 2;
+        min-width: 300px;
+      }
+
+      .founder-text h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .founder-text p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.6;
+      }
+
+      social-icons {
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+        color: #444;
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+      }
+
+      .social-icons a:hover {
+        color: #0077ff; /* Change as per your brand color */
+      }
+      }

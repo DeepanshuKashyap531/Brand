@@ -87,3 +87,38 @@
     justify-content: space-between;
   }
 }
+
+
+@media only screen and (max-width: 958px) and (orientation: landscape) {
+  .footer-logo {
+  width: 200px;
+  margin-top: -10vh;
+  margin-bottom: -10vh;
+  
+}
+.footer {
+  height: 80vh;
+  background-color: #111;
+  color: #eee;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-about {
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.8vw;
+}
+.footer-column h3{
+  margin-top: 13vh;
+  margin-bottom: 12vh;
+}
+}

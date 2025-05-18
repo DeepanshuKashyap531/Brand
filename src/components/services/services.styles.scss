@@ -254,8 +254,6 @@
 }
 }
 
-
-
 @media (min-width: 601px) and (max-width:1024px) {
     .reveal {
   opacity: 0;
@@ -405,4 +403,40 @@
         transition: 0.5s ease-in;
 }
 
+}
+
+@media only screen and (max-width: 958px) and (orientation: landscape) {
+
+    .services{
+    width: 100%;
+    height: 150vh;
+    margin-bottom: 20vh;
+
+}
+
+.services-header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0);
+}
+
+.services-header h1{
+    font-size: 7vw;
+    font-weight: 200;
+    letter-spacing: 1vw;
+    color: #fff;
+
+}
+
+.services-container .services-card{
+    width: 45%;
+    height: 65vh;
+    margin: 0vh 2vw; /* Reduced vertical margin from 5vh to 2vh */
+    border-radius: 1vw;
+    background-color: black;
+}
 }
