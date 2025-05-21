@@ -22,7 +22,7 @@ const Testi = () => {
       </div>
       <div class="testimonial-card">
         <img src={pic3} class="testimonial-img" alt=""/>
-        <div class="testimonial-name">SaurabhShakya</div>
+        <div class="testimonial-name">James Smith</div>
         <div class="testimonial-text">Professional, responsive and talented team!</div>
         <div class="stars">★★★★★</div>
       </div>
@@ -53,7 +53,7 @@ const Testi = () => {
       </div>
       <div class="testimonial-card">
         <img src={pic3} class="testimonial-img" alt=""/>
-        <div class="testimonial-name">SaurabhShakya</div>
+        <div class="testimonial-name">James Smith</div>
         <div class="testimonial-text">Professional, responsive and talented team!</div>
         <div class="stars">★★★★★</div>
       </div>
