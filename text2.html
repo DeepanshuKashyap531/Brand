@@ -1,117 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <body>
-   
-    <nav class="navbar">
-      <div class="nav-container">
-        <a href="/" class="logo">
-          <img src="src/assets/logo.png" alt="Company Logo" class="logo-img" />
-        </a>
-        <a href="javascript:history.back()" class="nav-link">
-          <i class="fas fa-arrow-left"></i> Back
-        </a>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Video Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <div class="container">
-      <!-- Section 1: About the Company -->
-      <section class="company-intro">
-        <h1>About Our Company</h1>
-        <p>
-          We are a leading firm providing top-notch services to our clients
-          worldwide. Our vision is to innovate and empower businesses globally.
-        </p>
-        <img
-          src="src/asstes/about/office.jpg"
-          alt="Company Overview"
-          class="intro-image"
-        />
-      </section>
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+/* --- NAVBAR --- */
+/* --- NAVBAR --- */
+.navbar {
+  width: 100%;
+  height: 15vh;
+  background-color: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 
-      <!-- Section 2: Split Layout -->
-      <section class="details">
-        <div class="left">
-          <h2>Our Mission</h2>
-        </div>
-        <div class="right">
-          <p>
-            Saurabh Shakya is the visionary founder of our company, bringing
-            nearly four years of experience as a Java Developer and a profound
-            commitment to driving technological innovation. With a solid
-            foundation in software engineering, Saurabh’s journey began at the
-            prestigious Apple Academy, where his hands-on experience ignited a
-            passion for solving complex problems through data-driven solutions.
-            Currently pursuing a Master’s degree in Data Science at the
-            University of Federico II in Naples, Italy, Saurabh possesses
-            expertise in machine learning, statistical modeling, and data
-            analysis. This advanced education complements his extensive
-            experience in software development, empowering him to bridge the gap
-            between technical solutions and actionable business insights. As
-            both a strategic thinker and practical problem-solver, Saurabh is
-            deeply committed to leveraging the power of data and technology to
-            help organizations across Europe make smarter, faster decisions. His
-            vision for the company is not only to create innovative solutions
-            but also to build long-term, impactful partnerships that foster
-            business growth and operational excellence. With a focus on
-            integrity, collaboration, and continuous improvement, Saurabh leads
-            the company with a forward-thinking approach, ensuring its ongoing
-            success and positive contribution to the tech industry.
-          </p>
-        </div>
-      </section>
+.nav-content {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
 
-      <!-- Section 3: About the Founder -->
-      <section class="founder">
-        <div class="founder-image">
-          <img src="src/asstes/about/founder.jpg" alt="Founder Photo" />
-        </div>
-        <div class="founder-text">
-          <h2>Meet Our Founder</h2>
-          <p>
-            Saurabh Shakya, with nearly four years of experience as a skilled
-            Java Developer, brings a strong foundation in software engineering
-            and a deep passion for technology. His journey began at the renowned
-            Apple Academy, where he completed a hands-on internship that sparked
-            a lasting interest in data-driven solutions. Currently pursuing a
-            Master’s degree in Data Science at the University of Federico II in
-            Naples, Italy, he is equipped with cutting-edge knowledge in machine
-            learning, statistical modeling, and data analysis. This unique
-            combination of software development experience and advanced data
-            science education empowers him to bridge the gap between code and
-            insight. As both a strategic thinker and practical problem-solver,
-            Saurabh is committed to using data and technology to create
-            meaningful impact. His vision for the company is rooted in helping
-            organizations across Europe harness the power of data to make
-            smarter, faster decisions.
-          </p>
-        </div>
+.nav-logo a {
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-        <div class="social-icons">
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://youtube.com" target="_blank" aria-label="YouTube">
-            <i class="fab fa-youtube"></i>
-          </a>
-        </div>
-      </section>
+.nav-links button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive nav tweaks */
+@media (max-width: 600px) {
+  .nav-content {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-logo a {
+    font-size: 22px;
+  }
+
+  .nav-links button {
+    width: 100%;
+  }
+}
+
+
+.container {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.category-buttons {
+  margin-bottom: 20px;
+}
+
+.category-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+.category-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+/* Left - Featured Video */
+.featured-video {
+  flex: 1 1 40%;
+}
+
+.featured-video .video-card {
+  height: 100%;
+}
+
+/* Right - Category Videos */
+.videos-section {
+  flex: 1 1 60%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Video Card Style */
+.video-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  text-align: left;
+}
+
+.video-card h3 {
+  margin-bottom: 10px;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive YouTube Iframe */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .featured-video,
+  .videos-section {
+    flex: 1 1 100%;
+  }
+}
+
+
+  </style>
+
+  <!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="nav-content">
+    <div class="nav-logo">
+      <!-- Replace with your logo image if needed -->
+      <a href="/">🎬 VideoZone</a>
     </div>
-  </body>
+    <div class="nav-links">
+      <button onclick="window.location.href='https://your-url.com';">🔙 Back</button>
+    </div>
+  </div>
+</nav>
+
+
+ <div class="container">
+    <h1>Video Categories</h1>
+
+    <div class="category-buttons">
+      <button onclick="filterVideos('all')">All</button>
+      <button onclick="filterVideos('vlogging')">Vlogging</button>
+      <button onclick="filterVideos('music')">Travelling</button>
+      <button onclick="filterVideos('sports')">Gaming</button>
+      <button onclick="filterVideos('education')">Education</button>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- Left Side - Featured Video -->
+      <div class="featured-video">
+        <div class="video-card">
+          <h2>🌟 Epic Drone Journey Over Budapest | 4K Cinematic Views"</h2>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/aHn2ziri4bs" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Right Side - Video List -->
+      <div class="videos-section">
+        <div class="video-card vlogging">
+          <h3>🎵</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/jfKfPfyJRdk" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="video-card vlogging">
+          <h3>🎵 Music Video 2</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="video-card sports">
+          <h3>⚽ Sports Video 1</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/21X5lGlDOfg" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="video-card sports">
+          <h3>🏀 Sports Video 2</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/8Qn_spdM5Zg" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="video-card education">
+          <h3>📘 Education Video 1</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/5MgBikgcWnY" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="video-card education">
+          <h3>📗 Education Video 2</h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/UNP03fDSj1U" 
+                    frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterVideos(category) {
+      const allVideos = document.querySelectorAll('.videos-section .video-card');
+      allVideos.forEach(video => {
+        if (category === 'all' || video.classList.contains(category)) {
+          video.style.display = 'block';
+        } else {
+          video.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
 </html>

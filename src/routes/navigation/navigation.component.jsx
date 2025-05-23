@@ -25,6 +25,7 @@ const Navigation = () => {
           <li><a href="#testimonial" onClick={() => setMenuOpen(false)}>Testimonial</a></li>
           <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
           <li><a href="/about" onClick={() => setMenuOpen(false)}>About Us</a></li>
+          <li><a href="/Youtube" onClick={() => setMenuOpen(false)}>Youtube</a></li>
         </ul>
 
         {/* Right Side */}
