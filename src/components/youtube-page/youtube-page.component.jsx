@@ -4,44 +4,49 @@ import dt3 from '../../asstes/logo/dt3.png'
 const videoData = [
   {
     category: "vlogging",
-    title: "🎵 Vlogging Video 1",
-    url: "https://www.youtube.com/embed/jfKfPfyJRdk"
+    title: "I SPENT A DAY EXPLORING Venice Shopping Market Streets and Found Hidden Gems!",
+    url: "https://www.youtube.com/embed/tQWF6Ale3DI"
   },
   {
     category: "vlogging",
-    title: "🎵 Vlogging Video 2",
-    url: "https://www.youtube.com/embed/2Vv-BfVoq4g"
-  },
-  {
-    category: "sports",
-    title: "⚽ Sports Video 1",
-    url: "https://www.youtube.com/embed/21X5lGlDOfg"
-  },
-  {
-    category: "sports",
-    title: "🏀 Sports Video 2",
-    url: "https://www.youtube.com/embed/8Qn_spdM5Zg"
-  },
-  {
-    category: "education",
-    title: "📘 Education Video 1",
-    url: "https://www.youtube.com/embed/5MgBikgcWnY"
+    title: "Discover Ischia Island, Italy | Thermal Spas of Negombo | Aragonese Castle",
+    url: "https://www.youtube.com/embed/D1_sTgYrswA"
   },
    {
-    category: "education",
-    title: "📘 Education Video 1",
-    url: "https://www.youtube.com/embed/5MgBikgcWnY"
-  },
-   {
-    category: "education",
-    title: "📘 Education Video 3",
-    url: "https://www.youtube.com/embed/5MgBikgcWnY"
+    category: "vlogging",
+    title: "Naples Walking Tour Ancient market place | Famous places | old church's walk through",
+    url: "https://www.youtube.com/embed/4FAifH6wdr8"
   },
   {
-    category: "education",
-    title: "📗 Education Video 4",
-    url: "https://www.youtube.com/embed/UNP03fDSj1U"
-  }
+    category: "vlogging",
+    title: "Naples Street Walk Tour - The Most Bizarre and Beautiful Italian City ",
+    url: "https://www.youtube.com/embed/_8_oispqVxM"
+  },
+   {
+    category: "vlogging",
+    title: "Why Budapest Is The Most STUNNING City In Europe?",
+    url: "https://www.youtube.com/embed/IIBC8FGb6hQ"
+  },
+  {
+    category: "vlogging",
+    title: "Budapest Nightlife 2025 | Best Nightclubs & Party Spots You Must Visit! 🎉🇭🇺 | Series Vlog 4",
+    url: "https://www.youtube.com/embed/KQj6U0vCnww"
+  },
+  {
+    category: "students and conustation",
+    title: "SPID for Indian Students: Everything You Need to Know in 2024",
+    url: "https://www.youtube.com/embed/mQ0NvblXf1I"
+  },
+  {
+    category: "students and conustation",
+    title: "Italy's Secret Tax Code - A Guide for Students",
+    url: "https://www.youtube.com/embed/rXZnBxEXIZk"
+  },
+    {
+    category: "students and conustation",
+    title: "7 Reasons Italy is the Best Place to Study Abroad",
+    url: "https://www.youtube.com/embed/YL7EjGCpDAw"
+  },
 ];
 
 const YoutubePage = () => {
@@ -73,8 +78,7 @@ const YoutubePage = () => {
         <div className="category-buttons2">
           <button onClick={() => setCategory("all")}>All</button>
           <button onClick={() => setCategory("vlogging")}>Vlogging</button>
-          <button onClick={() => setCategory("sports")}>Gaming</button>
-          <button onClick={() => setCategory("education")}>Education</button>
+          <button onClick={() => setCategory("students and conustation")}>students and conustation</button>
         </div>
 
         <div className="content-wrapper">
